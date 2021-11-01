@@ -61,20 +61,20 @@ img {
 }
 
 a {
-	color: #ff7f50;
+	color: #fafafa;
 	text-decoration: none;
 	/* No underlining */
 }
 
 a:hover {
-	color: #cc6540;
+	color: #fafafa;
 	text-decoration: underline;
 	/* Underlining when hovering over a link */
 }
 
 a:visited {
 	/* visited link */
-	color: #ff7f50;
+	color: #fafafa;
 }
 
 a:active {
@@ -90,34 +90,36 @@ a:focus {
 
 .button {
 	display: inline-block;
-	background-color: #ff7f50;
+	background-color: #0074b6;
 	color: white;
 	font-weight: 400;
 	text-decoration: none;
 	padding: 10px;
-	border-radius: 3px;
-	border-bottom: 2px solid #994c30;
+	border-radius: 1px;
+	border-bottom: 1px solid #000000;
 	transition: 0.2s opacity;
 }
 
 .button:hover {
-	opacity: 0.8;
+	opacity: 0.85;
 }
 
 .button:hover {
-	opacity: 0.8;
+	opacity: 0.85;
 	/* Reduces the opacity of the button to 80% */
 	text-decoration: none;
 }
 
 .button.contact {
-	background-color: transparent;
-	color: #000000;
-	text-transform: uppercase;
-	border: 2px solid #FFFFFF;
-	text-align: center;
-	transition-duration: 0.2s;
-	transition-property: opacity;
+	display: inline-block;
+	background-color: #0074b6;
+	color: white;
+	font-weight: 400;
+	text-decoration: none;
+	padding: 10px;
+	border-radius: 1px;
+	border-bottom: 1px solid #000000;
+	transition: 0.2s opacity;
 }
 
 .button.contact:hover {
@@ -126,7 +128,7 @@ a:focus {
 }
 
 header {
-	background-color: #F2F7F5;
+	background-color: #fafafa;
 	text-align: center;
 	padding: 10px 0;
 	width: 100%;
@@ -183,7 +185,7 @@ nav>ul>li>a {
 }
 
 #hero {
-	background-color: #F2F7F5;
+	background-color: #fafafa;
 	padding: 20px 0;
 	display: inline-block;
 	text-align: center;
@@ -194,7 +196,7 @@ nav>ul>li>a {
 }
 
 #work {
-	background-color: #F2F7F5;
+	background-color: #fafafa;
 	padding: 20px 0;
 	display: inline-block;
 	width: 100%;
@@ -204,7 +206,7 @@ nav>ul>li>a {
 }
 
 #footer {
-	background-color: #F2F7F5;
+	background-color: #fafafa;
 	padding: 20px 0;
 	display: inline-block;
 	width: 100%;
