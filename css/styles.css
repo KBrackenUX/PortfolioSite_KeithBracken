@@ -186,7 +186,7 @@ text-align: center;
 }
 
 main {
-  padding-top: 56px;
+padding-top: 56px;
 }
 
 .center {
@@ -213,34 +213,35 @@ font-weight: 700;
 color: #4a4a4a !important;
 }
 
-.navtoggle, .navtoggle.responsive {
-  position: relative;
+.navtoggle,
+.navtoggle.responsive {
+position: relative;
 }
 
 .navtoggle li .icon {
-  position: absolute;
-  right: 0;
-  top: 2px;
-  font-size: 20px;
+position: absolute;
+right: 0;
+top: 2px;
+font-size: 20px;
 }
 
-.navtoggle.responsive li  {
-  display: block;
+.navtoggle.responsive li {
+display: block;
 }
 
 .navtoggle.responsive nav {
-  padding: 24px 0 0;
-}
-.navtoggle.responsive li  {
-  display: block;
-  padding: 10px 0;
-  border-top: 1px solid rgba(255,127,80,0.5);
+padding: 24px 0 0;
 }
 
-.navtoggle.responsive li:last-child  {
-  padding: 0 0 10px;
+.navtoggle.responsive li {
+display: block;
+padding: 10px 0;
+border-top: 1px solid rgba(255, 127, 80, 0.5);
 }
 
+.navtoggle.responsive li:last-child {
+padding: 0 0 10px;
+}
 
 #hero {
 background-color: #fafafa;
@@ -350,32 +351,26 @@ Medium devices (640px and larger)
 ================================= */
 
 @media only screen and (min-width: 640px) {
-	nav {
-    width: auto;
-    float: right;
-  }
-
-  nav > ul > li {
-    display: inline-block;
-    padding: 10px 24px 0;
-  }
-
-  .navtoggle li:not(:last-child) {
-    display: inline-block;
-  }
-
-  .navtoggle li:last-child {
-    display: none;
-  }
-
-	nav > ul {
-  margin: 1em 0;
+nav {
+	width: auto;
+	float: right;
 }
-
+nav>ul>li {
+	display: inline-block;
+	padding: 10px 24px 0;
+}
+.navtoggle li:not(:last-child) {
+	display: inline-block;
+}
+.navtoggle li:last-child {
+	display: none;
+}
+nav>ul {
+	margin: 1em 0;
+}
 main {
 	padding-top: 140px;
 }
-
 body {
 	font-size: 16px;
 }
