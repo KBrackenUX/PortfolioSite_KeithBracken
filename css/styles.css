@@ -185,10 +185,6 @@ text-align: center;
 /* Centers text */
 }
 
-main {
-padding-top: 56px;
-}
-
 .center {
 text-align: center;
 }
@@ -236,7 +232,6 @@ padding: 24px 0 0;
 .navtoggle.responsive li {
 display: block;
 padding: 10px 0;
-border-top: 1px solid rgba(255, 127, 80, 0.5);
 }
 
 .navtoggle.responsive li:last-child {
@@ -345,31 +340,115 @@ to {
 animation: 34s cloud-move-reverse infinite alternate linear;
 }
 
+/* Banner */
+* {
+  box-sizing: border-box;
+}
+
+header {
+  background-color: #fafafa;
+  text-align: center;
+  padding: 10px 0;
+}
+
+.logo {
+  max-width: 150px;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 2.5em;
+}
+
+nav {
+  display: inline-block;
+  width: 100%;
+}
+
+nav > ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+nav > ul > li {
+  display: inline-block;
+  list-style-type: none;
+  padding: 0;
+}
+
+nav > ul > li > a {
+  display: inline-block;
+  padding: 0 15px;
+  color: #000000;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.navtoggle li:not(:last-child) {
+  display: none;
+}
+
+.navtoggle, .navtoggle.responsive {
+  position: relative;
+}
+
+/* our hamburger menu */
+.navtoggle li .icon {
+  position: absolute;
+  right: 0;
+  top: 2px;
+  font-size: 20px;
+}
+
+.navtoggle.responsive nav {
+  padding: 24px 0 0;
+}
+
+.navtoggle.responsive li  {
+  display: block;
+  padding: 10px 0;
+  border-top: 1px solid rgba(255,127,80,0.5);
+}
+
+.navtoggle.responsive li:last-child {
+  padding: 0 0 10px;
+}
+
+/*end/*
+
 
 /* ==============================
 Medium devices (640px and larger)
 ================================= */
 
-@media only screen and (min-width: 640px) {
-nav {
-	width: auto;
-	float: right;
-}
-nav>ul>li {
-	display: inline-block;
-	padding: 10px 24px 0;
-}
-.navtoggle li:not(:last-child) {
-	display: inline-block;
-}
-.navtoggle li:last-child {
-	display: none;
-}
+@media only screen and (min-width: 641px) {
+  header {
+    text-align: unset;
+    padding: 20px 0 13px;
+  }
+
+  nav {
+    width: auto;
+    float: right;
+    margin-top: 4px;
+  }
+
+  nav > ul > li {
+    display: inline-block;
+    position: relative;
+  }
+
+  .navtoggle li:not(:last-child) {
+    display: inline-block;
+  }
+
+  .navtoggle li:last-child {
+    display: none;
+  }
+
 nav>ul {
 	margin: 1em 0;
 }
 main {
-	padding-top: 140px;
+	padding-top: 0px;
 }
 body {
 	font-size: 16px;
@@ -397,6 +476,13 @@ h2 {
 #about {
 	text-align: center;
 }
+
+.social-icons img {
+	width: 50px;
+	height: auto;
+}
+}
+
 /* ==============================
 Large devices (1024px or larger)
 ================================= */
@@ -420,6 +506,11 @@ Large devices (1024px or larger)
 	#work p {
 		font-size: 1.25em;
 	}
+
+	.social-icons img {
+		width: 50px;
+		height: auto;
+	}
 	/* ==============================
 X-large devices (1440px or larger)
 ================================= */
@@ -441,4 +532,9 @@ X-large devices (1440px or larger)
 	margin-left: auto;
 	margin-right: auto;
 	width: 50%;
+}
+
+.social-icons img {
+	width: 50px;
+	height: auto;
 }
